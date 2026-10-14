@@ -1,0 +1,56 @@
+.coc7-exploration-hud {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.coc7-exploration-hud .status {
+  font-weight: bold;
+  margin: 0;
+}
+
+.coc7-exploration-hud .exploration-queue {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.coc7-exploration-hud .exploration-queue li {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.25rem 0.4rem;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.coc7-exploration-hud .exploration-queue li.active {
+  background: rgba(255, 200, 0, 0.25);
+  outline: 1px solid rgba(255, 200, 0, 0.6);
+}
+
+.coc7-exploration-hud .exploration-queue .swatch {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex: 0 0 auto;
+}
+
+.coc7-exploration-hud .exploration-queue .name {
+  flex: 1 1 auto;
+}
+
+.coc7-exploration-hud .exploration-queue .budget {
+  font-variant-numeric: tabular-nums;
+  opacity: 0.85;
+}
+
+.coc7-exploration-hud .controls {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.3rem;
+}

@@ -1,0 +1,43 @@
+{
+  "id": "coc7-mov-limiter",
+  "title": "CoC7 Movement",
+  "description": "CoC7 movement rules in one module: a combat Governor (walk = MOV, run = MOV x multiplier, with movement-trail cleanup) and an Exploration Limiter (round-robin turn queue capped at Move x 2 on scenes flagged Exploration).",
+  "version": "2.0.0",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "14"
+  },
+  "authors": [
+    {
+      "name": "ronsterama"
+    }
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "CoC7",
+        "type": "system",
+        "compatibility": {
+          "minimum": "7"
+        }
+      }
+    ]
+  },
+  "esmodules": [
+    "scripts/main.js"
+  ],
+  "styles": [
+    "styles/exploration.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "socket": true,
+  "url": "https://github.com/ronsterama/coc7-mov-limiter",
+  "manifest": "https://github.com/ronsterama/coc7-mov-limiter/releases/latest/download/module.json",
+  "download": "https://github.com/ronsterama/coc7-mov-limiter/releases/download/v2.0.0/module.zip"
+}

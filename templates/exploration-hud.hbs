@@ -1,0 +1,44 @@
+<div class="coc7-exploration-hud">
+  {{#unless hasScene}}
+    <p class="hint">{{localize "COC7EXP.Hud.NoScene"}}</p>
+  {{else}}
+    {{#unless isExploration}}
+      <p class="hint">{{localize "COC7EXP.Hud.NotExplorationScene"}}</p>
+    {{else}}
+      <p class="status">
+        {{#if active}}
+          {{localize "COC7EXP.Hud.StatusActive"}}
+        {{else}}
+          {{localize "COC7EXP.Hud.StatusInactive"}}
+        {{/if}}
+      </p>
+
+      {{#if hasQueue}}
+        <ol class="exploration-queue">
+          {{#each players}}
+            <li class="{{#if this.isActive}}active{{/if}}">
+              <span class="swatch" style="background-color:{{this.color}}"></span>
+              <span class="name">{{this.name}}</span>
+              <span class="budget">{{this.remaining}} / {{this.max}}</span>
+            </li>
+          {{/each}}
+        </ol>
+      {{else}}
+        <p class="hint">{{localize "COC7EXP.Hud.NoPlayers"}}</p>
+      {{/if}}
+
+      {{#if isGM}}
+        <div class="controls">
+          <button type="button" data-action="start">{{localize "COC7EXP.Hud.Start"}}</button>
+          <button type="button" data-action="next" {{#unless active}}disabled{{/unless}}>{{localize "COC7EXP.Hud.Next"}}</button>
+          <button type="button" data-action="reset">{{localize "COC7EXP.Hud.Reset"}}</button>
+          <button type="button" data-action="end" {{#unless active}}disabled{{/unless}}>{{localize "COC7EXP.Hud.End"}}</button>
+        </div>
+      {{else if isMyTurn}}
+        <div class="controls player-controls">
+          <button type="button" data-action="next">{{localize "COC7EXP.Hud.EndTurn"}}</button>
+        </div>
+      {{/if}}
+    {{/unless}}
+  {{/unless}}
+</div>

@@ -1,0 +1,23 @@
+{
+  "COC7EXP.Settings.MoveMultiplier.Name": "Movement multiplier (Move x N per turn)",
+  "COC7EXP.Settings.MoveMultiplier.Hint": "How many times a token's Move stat it may travel during its turn on an Exploration Scene. CoC7's exploration rule default is 2. Also use this to compensate if the scene's grid distance unit doesn't match your table's Move unit.",
+  "COC7EXP.SceneConfig.Legend": "Exploration Movement Limiter",
+  "COC7EXP.SceneConfig.Toggle": "Exploration Scene",
+  "COC7EXP.SceneConfig.Hint": "Player token movement on this scene is capped at (Move x the movement multiplier setting) per turn, taken in a round-robin queue.",
+  "COC7EXP.Hud.Title": "Exploration Turns",
+  "COC7EXP.Hud.ToggleTitle": "Toggle Exploration Turn Tracker",
+  "COC7EXP.Hud.NoScene": "No active scene.",
+  "COC7EXP.Hud.NotExplorationScene": "This scene is not flagged as an Exploration Scene.",
+  "COC7EXP.Hud.StatusActive": "Exploration in progress",
+  "COC7EXP.Hud.StatusInactive": "Exploration not started",
+  "COC7EXP.Hud.NoPlayers": "No connected players own a token on this scene.",
+  "COC7EXP.Hud.Start": "Start",
+  "COC7EXP.Hud.Next": "Next Turn",
+  "COC7EXP.Hud.EndTurn": "End Turn",
+  "COC7EXP.Hud.Reset": "Reset Queue",
+  "COC7EXP.Hud.End": "End",
+  "COC7EXP.NotYourTurn": "It's not your turn to explore — waiting on {name}.",
+  "COC7EXP.Hud.YourTurnChat": "It's your turn to explore! Open the Exploration Turn Tracker (hiking-boot icon) to see your movement budget and end your turn when done.",
+  "COC7EXP.MovementExceeded": "That move exceeds your remaining movement ({remaining} left this turn).",
+  "COC7EXP.NoGMOnline": "No GM is connected — the exploration turn tracker needs a GM online to record changes."
+}
